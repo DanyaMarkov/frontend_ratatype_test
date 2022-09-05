@@ -1,0 +1,23 @@
+
+.body {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.map {
+    background-color: green;
+    border: 5px solid black;
+    border-radius: 10px;
+    
+    margin: 15px 7px 15px 15px;
+    height: 95vh;
+}
+
+.myDeck {
+    background-color: rgb(220, 220, 220);
+    border: 5px solid black;
+    border-radius: 10px;
+    
+    margin: 15px 15px 15px 7px;
+    height: 95vh;
+}

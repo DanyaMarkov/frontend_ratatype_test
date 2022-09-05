@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,gBAAgB,EAAE,OAAkB;EACpC,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,IAAI;EAEnB,kBAAkB,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,qBAAqB;EACzD,eAAe,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,qBAAqB;EACtD,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,qBAAqB;CACpD",
+    "sources": [
+        "ModalChoose.module.scss"
+    ],
+    "names": [],
+    "file": "ModalChoose.module.css"
+}

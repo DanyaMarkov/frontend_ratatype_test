@@ -1,0 +1,45 @@
+.forest {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 14%;
+      grid-template-rows: 14%;
+  height: 90vh;
+}
+
+.line {
+  margin: 0px 200px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.location {
+  border: 3px solid black;
+  padding: 10px 30px;
+  background-color: antiquewhite;
+  color: black;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.passedLocation {
+  border: 3px solid black;
+  padding: 10px 30px;
+  background-color: #e3f542;
+  color: black;
+  font-size: 20px;
+  font-weight: 800;
+  pointer-events: none;
+}
+/*# sourceMappingURL=Forest.module.css.map */

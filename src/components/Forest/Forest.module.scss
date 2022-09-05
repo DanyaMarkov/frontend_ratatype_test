@@ -1,0 +1,42 @@
+
+.forest {
+    // display: flex;
+    // flex-direction: column;
+    // grid-template-rows: 14%;
+    display: grid;
+    grid-template-rows: 14%;
+    height: 90vh;
+}
+
+.line {
+    margin: 0px 200px;
+    // border: solid 2px white;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.location {
+    border: 3px solid black;
+    padding: 10px 30px;
+    background-color: antiquewhite;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+.passedLocation {
+    border: 3px solid black;
+    padding: 10px 30px;
+    background-color: rgb(227, 245, 66);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 800;
+
+    pointer-events: none;
+}

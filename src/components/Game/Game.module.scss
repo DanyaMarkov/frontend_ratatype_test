@@ -1,0 +1,102 @@
+
+
+.body {
+    background-color: rgb(189, 240, 189);
+    height: 100vh;
+
+
+    display: grid;
+    grid-template-columns: 13% 70% 17%;
+    &__left {
+        display: grid;
+        grid-template-rows: 75% 25%;
+    }
+    &__middle {
+        display: grid;
+        grid-template-rows: 75% 25%;
+    }
+    &__right {
+        display: grid;
+        grid-template-rows: 75% 25%;
+    }
+}
+
+.enemy {
+    background-color: red;
+
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 17% 83%;
+    &__match {
+        background-color: grey;
+        display: grid;
+        grid-template-rows: 70% 30%;
+    }
+    &__field {
+        background-color: rgb(217, 181, 181);
+        display: grid;
+        grid-template-rows: 33% 33% 33%;
+    }
+}
+
+.fieldLine {
+    margin: 0px 100px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.card {
+    margin: 3px 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.myCards {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 0px 50px;
+}
+
+.myCard {
+    margin: 5px -20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+    min-width: 200px;
+}
+
+.items {
+    margin: 5px 5px;
+    max-height: 40%;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    padding: 10px;
+
+    &__el {
+        border: solid black 1px;
+        font-size: 20px;
+        margin: 5px;
+    }
+}
+
+
+
+.takeCards {
+    background-color: rgb(56, 134, 202);
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 5px;
+    // margin: 0px auto;
+}
+
+.newCard {
+    margin: 5px 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+    min-width: 42%;
+}

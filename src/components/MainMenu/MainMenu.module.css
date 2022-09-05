@@ -1,0 +1,36 @@
+.menu {
+  background-color: #29284D;
+  height: 100vh;
+}
+
+.block {
+  padding: 90px 0px 0px 46%;
+  background-color: #5a4848;
+  font-weight: 900;
+  font-size: 40px;
+  color: #bb074f;
+}
+
+.buttons {
+  padding: 90px 0px 0px 46%;
+  font-weight: 900;
+  font-size: 40px;
+  color: #bb074f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.buttons a:hover {
+  color: #681e3b;
+  background-color: honeydew;
+}
+/*# sourceMappingURL=MainMenu.module.css.map */
