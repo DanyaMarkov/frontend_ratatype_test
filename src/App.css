@@ -1,5 +1,8 @@
-.app {
+.App {
+  background-color: rgb(85, 197, 255);
+  height: 100vh;
 
-  background: #29284D;
+  /* font-family: 'Raleway', sans-serif; */
+
 
 }
