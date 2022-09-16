@@ -1,10 +1,5 @@
-
 .body {
-    // background-color: rgb(85, 197, 255);
-    // height: 100vh;
-    // font-family: 'Raleway', sans-serif;
     font-weight: 700;
-
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin: 150px auto;
@@ -14,7 +9,6 @@
 
     display: grid;
     grid-template-columns: 83% 17%;
-
 
     &__text {
         position: relative;
@@ -33,7 +27,7 @@
 .languages {
     display: flex;
     flex-direction: row;
-
+    margin-bottom: 10px;
     &__el:hover {
         transition: 0.2s;
         cursor: pointer;
@@ -43,7 +37,7 @@
         margin: 5px 5px;
         max-width: 60px;
         max-height: 48px;
-        border: 6px rgb(255, 255, 255) solid;
+        border: 6px rgb(255, 255, 255) outset;
         img {
             background-size: cover;
             width: 100%;
@@ -51,7 +45,7 @@
         }
 
         &_active {
-            border: 6px rgb(115, 136, 255) outset;
+            border: 6px rgb(115, 136, 255) inset;
             margin: 5px 5px;
             max-width: 60px;
             max-height: 48px;
@@ -82,7 +76,6 @@
 
 .mainText {
     position: relative;
-
     font-weight: 700;
     width: auto;
     height: 100%;
@@ -109,11 +102,8 @@
     }
 }
 
-/// /////////////////////////////////
-
-
 .speed .accuracy {
-    font-size: 21px;
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -121,15 +111,16 @@
 }
 
 .indicators {
-
     display: flex;
     flex-direction: row;
     padding: 5px 0px;
     justify-content: space-around;
+    align-items: center;
 
     &__number {
+        margin: 0px 0px 15px 0px;
         font-size: 22px;
-        color:rgb(68, 32, 214)
+        color:rgb(112, 80, 239)
     }
 }
 
@@ -137,6 +128,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 5px;
     button {
         border-radius: 16px;
         padding: 10px 20px;

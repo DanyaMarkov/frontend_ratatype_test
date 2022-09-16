@@ -45,6 +45,8 @@ class Stats {
             this.rightSymbols++;
 
             if (this.selectedText.length === this.currentInput.length) {
+                this.seconds = 0;
+
                 clearInterval(this.interval);
 
                 // alert(
