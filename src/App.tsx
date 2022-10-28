@@ -1,13 +1,13 @@
+import React from "react";
 import "./App.css";
 import Body from "./components/Body/Body";
 
-function App() {
+const App: React.FC = () => {
     return (
         <div className="App">
-            <div>⠀</div>
             <Body />
         </div>
     );
-}
+};
 
 export default App;

@@ -1,12 +1,12 @@
 import { makeAutoObservable } from "mobx";
 
 class Stats {
-    speed = 0;
-    accuracy = 0;
-    rightSymbols = 0;
-    failedSymbols = 0;
-    seconds = 0;
-    interval = 0;
+    speed:number = 0;
+    accuracy:number = 0;
+    rightSymbols:number = 0;
+    failedSymbols:number = 0;
+    seconds:number = 0;
+    interval:any = 0;
 
     currLanguage = "russian";
 
@@ -24,7 +24,7 @@ class Stats {
         makeAutoObservable(this);
     }
 
-    setLanguage(lang) {
+    setLanguage(lang:string) {
         this.reset();
         if (lang === "russian") {
             this.currLanguage = "russian";
@@ -36,11 +36,8 @@ class Stats {
     }
 
     //Событие ввода символа
-    handleChange(e) {
-        if (
-            String(e.target.value.slice(-1)) ===
-            String(this.selectedText[this.currentInput.length])
-        ) {
+    handleChange(e:any) {
+        if (String(e.target.value.slice(-1)) === String(this.selectedText[this.currentInput.length])) {
             this.currentInput = e.target.value;
             this.rightSymbols++;
 
@@ -48,14 +45,6 @@ class Stats {
                 this.seconds = 0;
 
                 clearInterval(this.interval);
-
-                // alert(
-                //     "Ваша скорость: " +
-                //         this.speed.toFixed(2) +
-                //         " зн. в минуту. \n Ваша точность: " +
-                //         this.accuracy.toFixed(0) +
-                //         " %"
-                // );
             }
         } else {
             this.failedSymbols++;
@@ -79,9 +68,7 @@ class Stats {
 
     //Считаем точность
     matchAccuracy() {
-        this.accuracy =
-            (this.rightSymbols / (this.rightSymbols + this.failedSymbols)) *
-            100;
+        this.accuracy = (this.rightSymbols / (this.rightSymbols + this.failedSymbols)) * 100;
     }
 
     //Сброс

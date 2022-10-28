@@ -1,3 +1,5 @@
+
+
 .body {
     font-weight: 700;
     background-color: rgb(255, 255, 255);
@@ -5,7 +7,8 @@
     margin: 150px auto;
     padding: 40px 40px;
 
-    max-width: 65%;
+    max-width: 85%;
+    min-width: 65%;
 
     display: grid;
     grid-template-columns: 83% 17%;
@@ -143,4 +146,40 @@
         background-color: rgb(140, 115, 255);
         border: 0px;
     }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .body {
+        display: grid;
+        grid-template-columns: 100%;
+        &__text {
+            grid-row: 2;
+            width: 100%;
+        }
+        &__info {
+            justify-content: space-between;
+            width: 100%;
+            grid-row: 1;
+            background-color: rgb(238, 238, 238);
+            display: flex !important;
+            flex-direction: row !important;
+            border: 1px solid black;
+            border-radius: 20px 20px 0px 0px;
+            // justify-content:space-around;
+        }
+    }
+    .languages {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .indicators {
+        display: flex;
+        flex-direction: column;
+    }
+    textarea {
+        min-height:200px;
+    }
+
 }

@@ -1,11 +1,15 @@
 {
-  "name": "card-game",
+  "name": "frontend_ratatype_test",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://danyamarkov.github.io/frontend_ratatype_test/",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
+    "@types/prop-types": "^15.7.5",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
     "bootstrap": "^5.2.0",
     "css-modules": "^0.3.0",
     "mobx": "^6.4.2",
@@ -15,13 +19,16 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
+    "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [

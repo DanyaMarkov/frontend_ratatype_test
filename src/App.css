@@ -1,8 +1,8 @@
 .App {
   background-color: rgb(85, 197, 255);
   height: 100vh;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   /* font-family: 'Raleway', sans-serif; */
-
-
 }
